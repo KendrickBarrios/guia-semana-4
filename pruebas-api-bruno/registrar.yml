@@ -1,0 +1,25 @@
+info:
+  name: registrar
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://localhost:8080/api/practice-groups
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Grupo K",
+        "size": 20,
+        "role": "Operador",
+        "currentStudentCount": 0,
+        "isActive": true
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
