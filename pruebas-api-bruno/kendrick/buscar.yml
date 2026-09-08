@@ -1,10 +1,10 @@
 info:
-  name: eliminar
+  name: buscar
   type: http
-  seq: 5
+  seq: 1
 
 http:
-  method: DELETE
+  method: GET
   url: http://localhost:8080/api/practice-groups/1
   auth: inherit
 
@@ -13,3 +13,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: true

@@ -5,15 +5,15 @@ info:
 
 http:
   method: PUT
-  url: http://localhost:8080/api/practice-groups/1
+  url: http://localhost:8080/api/subjects/1
   body:
     type: json
     data: |-
       {
-        "name": "Grupo A",
-        "size": 15,
-        "role": "Asistente",
-        "currentStudentCount": 5,
+        "name": "Servicios Web",
+        "practiceHours": 6,
+        "abbreviation": "SW-G1",
+        "rotates": false,
         "isActive": true
       }
   auth: inherit
@@ -23,3 +23,4 @@ settings:
   timeout: 0
   followRedirects: true
   maxRedirects: 5
+  forwardAuthorizationHeader: false
