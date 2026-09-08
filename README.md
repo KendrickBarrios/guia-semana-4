@@ -28,5 +28,5 @@ que el DTO contenga otros objetos con sus propias validaciones).
 
 5. ¿Cómo interviene Jackson en las respuestas de la API?
 
-Permite la serialización (conversión de objetos de Java a JSON) y deserialización (conversión de JSON a objetos de Java)
+Permite la serialización (conversión de objetos de Java a JSON) y deserialización (conversión de JSON a objetos de Java),
 de modo que cada endpoint pueda manejar ambos formatos según sea necesario.
